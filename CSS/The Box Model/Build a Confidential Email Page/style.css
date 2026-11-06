@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+#email {
+  padding: 50px;
+  margin: 50px auto;
+  width: 500px;
+  border: 2px solid black;
+  background-color: #fff5ee;
+  box-shadow: 5px 5px 15px black;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.content {
+  margin: 120px 50px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+.blurred {
+  filter: blur(3px);
+}
+
+#confidential,
+#top-secret {
+  position: absolute;
+}
+
+#confidential {
+  display: inline-block;
+  top: 50px;
+  right: 85px;
+  border: 5px solid red;
+  color: red;
+  padding: 12px;
+  font-size: 1.7rem;
+  font-weight: 600;
+  transform: rotate(-15deg);
+  margin-left: 5px;
+}
+
+#top-secret {
+  margin-left: 5px;
+  display: inline-block;
+  right: 90px;
+  bottom: 45px;
+  border: 5px solid red;
+  color: red;
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 7px 10px;
+  transform: rotate(15deg);
+}

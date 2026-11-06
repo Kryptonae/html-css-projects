@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+}
+
+.pricing-container {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid black;
+  padding: 15px;
+}
+
+.pricing-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 0 0 200px;
+  border: 2px solid black;
+  padding: 15px;
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+  margin: 10px;
+}
+
+.pricing-card:hover {
+  transform: scale(1.05);
+}
+
+.basic-plan {
+  order: 0;
+}
+
+.pro-plan {
+  order: 1;
+  flex-grow: 2;
+}
+
+.premium-plan {
+  order: 2;
+}
+
+h2,
+.pricing {
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.pricing {
+  font-size: 1.3rem;
+  font-weight: 500;
+  border-bottom: 1px solid black;
+  margin: 0 15px 20px 15px;
+}
+
+.plan-features {
+  margin-bottom: 8px;
+  font-size: 0.8rem;
+}
+
+.tick {
+  color: green;
+  margin-right: 5px;
+}
+
+.cross {
+  color: red;
+  margin-right: 5px;
+}
+
+.choose-plan-btn {
+  background-color: #e0a800;
+  padding: 6px 0;
+  border: none;
+  font-weight: 600;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.choose-plan-btn:hover {
+  background-color: #f1be32;
+}

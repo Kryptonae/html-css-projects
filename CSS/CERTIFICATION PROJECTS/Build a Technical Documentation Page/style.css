@@ -1,0 +1,139 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  display: flex;
+}
+
+header {
+  width: 20%;
+  height: 100vh;
+  background-color: black;
+  color: white;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 30px 15px;
+  border-bottom: 2px solid lightgray;
+}
+
+header ul {
+  list-style: none;
+}
+
+header ul li {
+  padding: 10px 20px;
+  border-bottom: 2px solid lightgray;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-size: 1.4rem;
+  margin: 20px 0;
+}
+
+#main-doc {
+  width: 80%;
+  height: 100vh;
+  padding: 10px 40px;
+  background-color: #3b3b3b;
+  color: white;
+  overflow-y: scroll;
+  border-left: 2px solid gray;
+}
+
+#main-doc h2 {
+  margin: 30px 0;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: whitesmoke;
+}
+
+#main-doc p {
+  margin-bottom: 20px;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 30px;
+  margin-left: 20px;
+  color: white;
+}
+
+#main-doc ul li {
+  margin-bottom: 15px;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 30px;
+  margin-left: 50px;
+  color: white;
+}
+
+#main-doc .code {
+  padding: 20px 10px;
+  background-color: rgb(88, 89, 91);
+  color: azure;
+  margin: 0 70px 20px 30px;
+  border-radius: 10px;
+  text-align: center;
+  font: 1.2rem;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1024px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+    width: 100%;
+    height: auto;
+  }
+  header h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  #main-doc {
+    width: 100%;
+    height: auto;
+    overflow: scroll;
+    border: none;
+  }
+  #main-doc h2 {
+    font-size: 2rem;
+  }
+  #main-doc p {
+    font-size: 1.2rem;
+  }
+  #main-doc ul li {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 640px) {
+  #main-doc {
+    width: 100%;
+    height: auto;
+    overflow: scroll;
+    border: none;
+    padding: 10px 20px;
+  }
+  #main-doc .code {
+    font-size: 0.7rem;
+    margin: 0;
+    padding: 10px 5px;
+    font-size: 0.625rem;
+    margin-bottom: 20px;
+  }
+}

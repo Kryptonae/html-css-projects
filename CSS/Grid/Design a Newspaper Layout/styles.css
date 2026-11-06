@@ -1,0 +1,67 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: serif;
+  color: black;
+  background-color: whitesmoke;
+}
+
+.title {
+  grid-area: title;
+  text-align: center;
+  background-color: #1B1B32;
+  color: white;
+  padding: 10px 0;
+  margin: 20px 20px 0 20px;
+  font-size: 3rem;
+}
+
+.feature-article {
+  grid-area: feature-article;
+  background-color: red;
+}
+
+.secondary-article {
+  grid-area: secondary-article;
+  background-color: blue;
+}
+
+.cover-image {
+  grid-area: cover-image;
+  max-width: 100%;
+  object-fit: cover;
+  background-color: yellow;
+}
+
+.small-article1 {
+  grid-area: small-article1;
+}
+
+.small-article2 {
+  grid-area: small-article2;
+}
+
+.small-article3 {
+  grid-area: small-article3;
+}
+
+.newspaper-layout {
+    display: grid;
+    grid-template-areas: "title title title"
+    "feature-article feature-article cover-image"
+    "secondary-article secondary-article cover-image"
+    "small-article1 small-article2 small-article3";
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: auto repeat(3,1fr);
+    gap: 10px;
+}

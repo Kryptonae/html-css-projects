@@ -1,0 +1,39 @@
+body {
+  background-color: #f4f4f4;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.color-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.color-box {
+  width: 100px;
+  height: 100px;
+  margin: 10px 30px;
+  border-radius: 10px;
+}
+
+.color1 {
+  background-color: #33ff57;
+}
+.color2 {
+  background-color: rgb(128, 0, 128);
+}
+.color3 {
+  background-color: orange;
+}
+.color4 {
+  background-color: hsl(59, 61%, 26%);
+}
+.color5 {
+  background-color: red;
+}
